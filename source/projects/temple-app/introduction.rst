@@ -1,0 +1,4 @@
+Introduction
+============
+
+Temple App is an Android platform that allows keeping track of finance based information The application's sole purpose is to make your development workflow of maintaining the database simple, fast and secure. It is a Content Management application that provides the feature of authentication that will only facilitate the higher authorities of the temple to login and maintain the whole. Using the application the user can be tracked for adding, searching, editing or even deleting the Pooja. The application focuses to ease the work of the temple authorities and help them in maintaining a clean and optimized content. The application also provides a handy way of printing the receipts directly from the app that prints the details of pooja/donation registrations of users.
