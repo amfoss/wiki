@@ -1,0 +1,25 @@
+image: python:3.8-alpine
+
+# Global variables to be used in other jobs, branches and all
+variables:
+  HTML_BASEURL: https://gitlab.com/amfoss/wiki
+  INSTALLDIR: public
+
+# Create a global cache to keep other branch and jobs pages
+cache:
+  paths:
+  - public
+
+# Deploy to GitLab Pages
+pages:
+  stage: deploy
+  script:
+  - pip3 install -r requirements.txt
+  - apk add make
+  - rm -rf public
+  - make html
+  - mv  build/html public
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 week
